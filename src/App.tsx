@@ -1,7 +1,20 @@
+import { Button } from "./components/Button";
+import {ThemeProvider} from 'styled-components';
+import { defaultTheme } from "./styles/themes/default";
+import { GlobalStyle } from "./styles/global";
+
 function App() {
 
   return (
-      <h1>Hello World</h1>
+    <ThemeProvider theme={defaultTheme}>
+      <Button />
+      <Button variant="secondary" />
+      <Button variant="danger" />
+      <Button variant="success"/>
+
+      <GlobalStyle />
+    </ThemeProvider>
+
   )
 }
 
