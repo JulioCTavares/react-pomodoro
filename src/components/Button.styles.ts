@@ -15,7 +15,7 @@ const buttonVariants = {
 }
 
 
-export const ButtonCotainer = styled.button<ButtonContainerProps>`
+export const ButtonContainer = styled.button<ButtonContainerProps>`
   width: 100px;
   height: 40px;
   margin: 10px;
