@@ -14,15 +14,8 @@
     },
     "import/resolver": {
       "node": {
-        "paths": [
-          "src"
-        ],
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   },
@@ -36,6 +29,7 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/no-named-as-default": "off"
   }
 }
