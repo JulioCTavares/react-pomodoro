@@ -4,6 +4,8 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'danger' | 'success';
 }
 
-export const Button = ({ variant = 'primary' }: ButtonProps) => {
+const Button = ({ variant = 'primary' }: ButtonProps) => {
   return <ButtonContainer variant={variant}>Enviar</ButtonContainer>;
 };
+
+export default Button;
