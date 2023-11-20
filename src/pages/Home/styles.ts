@@ -56,7 +56,7 @@ export const Separator = styled.div`
 
 `;
 
-export const CountDownButton = styled.button`
+const BaseDownButton = styled.button`
   width: 100%;
   border: 0;
   padding: 1rem;
@@ -67,7 +67,6 @@ export const CountDownButton = styled.button`
   gap: 0.5rem;
   font-weight: bold;
   cursor: pointer;
-  background: ${props => props.theme["green-500"]};
   color: ${props => props.theme["gray-100"]};
 
   &:disabled {
@@ -75,11 +74,25 @@ export const CountDownButton = styled.button`
     cursor: not-allowed;
   }
 
+
+`;
+
+export const CountDownButton = styled(BaseDownButton)`
+  background: ${props => props.theme["green-500"]};
+
   &:not(:disabled):hover {
     background: ${props => props.theme["green-700"]};
   }
-
 `;
+
+export const StopCountDownButton = styled(BaseDownButton)`
+  background: ${props => props.theme["red-500"]};
+
+  &:not(:disabled):hover {
+    background: ${props => props.theme["red-700"]};
+  }
+`;
+
 
 const BaseInput = styled.input`
   background: transparent;
