@@ -1,8 +1,8 @@
 import { Cycle } from ".."
 
 export enum ActionTypes {
-  CREATE_NEWCYCLE = 'createNewCycle'
-  INTERRUPT_CURRENT_CYCLE = 'interruptCurrentCycle'
+  CREATE_NEWCYCLE = 'createNewCycle',
+  INTERRUPT_CURRENT_CYCLE = 'interruptCurrentCycle',
   MARK_CURRENT_CYCLE_AS_FINISHED = 'markCurrentCycleAsFinished'
 }
 
